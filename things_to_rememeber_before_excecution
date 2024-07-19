@@ -1,1 +1,44 @@
-the sequence of the running and keeping things in brain before runnign those files : 
+# Things to Remember Before Running Files
+
+## 1. Flashing the ESP8266
+- Always remember to flash the ESP8266.
+- Running it at a baud rate of 115200 can cause errors and potentially damage the NodeMCU 8266.
+  
+## 2. Ensuring an Empty MCU
+- Run a plain program before uploading a new one.
+- This ensures the MCU is empty before putting a new program into it.
+
+## 3. Connecting to WiFi
+- When connecting the ESP8266 to WiFi, remember that it will generate the same IP address up to eight times. After that, it may change.
+- Use the app "Fing" (available on iPhone) to check the active IP address. Similar apps are available for Android.
+- Even if you supply power to the ESP8266 with a power bank, ensure it connects to WiFi and receives commands properly.
+
+## 4. Battery Power Supply and Servo Calibration
+- Always check the battery power supply when making connections.
+- When using a new servo, calibrate it first before connecting it to the ESP8266. This ensures better and more accurate motion.
+
+## 5. Servo Calibration
+- Use the code named "test_servo_code" for servo calibration.
+
+## 6. Checking ESP8266 Without WiFi
+- Use "manual_diff_drive.ino" to check the ESP8266 functionality without WiFi.
+
+## 7. Final Code and WiFi Connection
+- The final code to run is "differential_drive_servo2_new.ino".
+- Connect to WiFi and get the IP address.
+- Use the obtained IP address in "diff_drive_code.py" for GET and POST requests to manually give directions.
+
+## 8. Grid Path Planning
+- Use "simple_grid_path_planning" where the user defines coordinates on the field (source and goal).
+
+## 9. Multi-Robot Motion Planning
+- Use "multi_motion_planning" to simulate the movement of three robots.
+
+## 10. Environment Mapping
+- If a laptop is connected to a webcam or any other device of your teammate, run "tries_04.py".
+- This will provide a field view for mapping the environment.
+
+---
+
+### Summary
+This file outlines the sequence and important steps to remember before running the related files for the project. It includes flashing the ESP8266, ensuring an empty MCU, connecting to WiFi, checking battery power supply, servo calibration, and running specific codes for path planning and motion simulation.
